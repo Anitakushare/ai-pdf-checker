@@ -1,14 +1,16 @@
 export default function ResultTable({ results }) {
   return (
+   
     <div className="w-5xl flex justify-center">
-    <table className="border bg-fuchsia-950">
+       {/***Result Table */}
+    <table className="border bg-stone-900">
       <thead>
         <tr className="bg-gray-200">
-          <th className="p-2 border border-gray-500 text-gray-800">Rule</th>
-          <th className="p-2 border border-gray-500 text-gray-800">Status</th>
-          <th className="p-2 border border-gray-500 text-gray-800">Evidence</th>
-          <th className="p-2 border border-gray-500 text-gray-800">Reasoning</th>
-          <th className="p-2 border border-gray-500 text-gray-800">Confidence</th>
+          <th className="p-2 border border-gray-500 text-rose-900">Rule</th>
+          <th className="p-2 border border-gray-500 text-rose-900">Status</th>
+          <th className="p-2 border border-gray-500 text-rose-900">Evidence</th>
+          <th className="p-2 border border-gray-500 text-rose-900">Reasoning</th>
+          <th className="p-2 border border-gray-500 text-rose-900">Confidence</th>
         </tr>
       </thead>
 

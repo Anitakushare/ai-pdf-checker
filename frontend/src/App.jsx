@@ -7,13 +7,13 @@ function App() {
   const [rules, setRules] = useState(["", "", ""]);
   const [results, setResults] = useState([]);
   const [error,setError]=useState("")
-
+   //read new rule and update the state
   const handleRuleChange = (index, value) => {
     const updated = [...rules];
     updated[index] = value;
     setRules(updated);
   };
-
+//handle submit data when user click on check document
  const handleSubmit = async () => {
   try {
     const filledRules = rules.filter(r => r.trim() !== "");
@@ -40,8 +40,6 @@ function App() {
     setError(""); // clear previous error
   } catch (err) {
     console.error(err);
-
-    // gracefully show backend error
     setResults([]); 
 
     setError(
@@ -53,7 +51,7 @@ function App() {
 };
 
   return (
-    <div className="bg-fuchsia-950 min-h-screen flex flex-col justify-center items-center gap-10">
+    <div className="bg-rose-900 min-h-screen flex flex-col justify-center items-center gap-10">
     <div className="p-8 max-w-4xl bg-gray-200 rounded-lg mt-4">
       <h1 className="text-3xl font-bold mb-6 text-center text-gray-800">AI–PDF Rule Checker</h1>
 
@@ -67,7 +65,7 @@ function App() {
       </div>
 
       {/* Submit */}
-      <button onClick={handleSubmit} className="bg-gray-300 text-gray-800 px-4 py-2 rounded">
+      <button onClick={handleSubmit} className="bg-stone-800 text-gray-200 hover:bg-stone-600 px-4 py-2 rounded">
         Check Document
       </button>
       {error && (
