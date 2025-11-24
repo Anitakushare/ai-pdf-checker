@@ -70,7 +70,7 @@ It allows users to upload a PDF file, enter custom rules, and get AI-generated p
 
 ## Installation
 1. Clone the repo
-git clone https://github.com/your-username/niyamr-ai-checker.git
+git clone https://github.com/Anitakushare/ai-pdf-checker.git
 cd niyamr-ai-checker
 
 ## Backend Setup
